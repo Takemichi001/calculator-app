@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"> 
+  <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Indie+Flower&family=League+Spartan:wght@100..900&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="calcstyle.css">
+  <title>Frontend Mentor | Calculator app</title>
+</head>
+<body>
+  <header><h1>Calculadora</h1></header>
+  <div class="theme-switcher">
+    <input type="radio" name="theme" id="theme1" checked>
+    <label for="theme1">1</label>
+
+    <input type="radio" name="theme" id="theme2">
+    <label for="theme2">2</label>
+
+    <input type="radio" name="theme" id="theme3">
+    <label for="theme3">3</label>
+
+    <div class="slider"></div>
+</div>
+
+  <main>
+    <section class="calculator">
+      <input type="text" id="display" readonly>
+      <br>
+      <input type="button" value="7" onclick="add('7')" class="botones">
+      <input type="button" value="8" onclick="add('8')" class="botones">
+      <input type="button" value="9" onclick="add('9')" class="botones">
+      <input type="button" value="DEL" onclick="del()" class="botondel">
+      <br>
+      <input type="button" value="4" onclick="add('4')" class="botones">
+      <input type="button" value="5" onclick="add('5')" class="botones">
+      <input type="button" value="6" onclick="add('6')" class="botones">
+      <input type="button" value="+" onclick="add('+')" class="botones">
+      <br>
+      <input type="button" value="1" onclick="add('1')" class="botones">
+      <input type="button" value="2" onclick="add('2')" class="botones">
+      <input type="button" value="3" onclick="add('3')" class="botones">
+      <input type="button" value="-" onclick="add('-')" class="botones">
+      <br>
+      <input type="button" value="." onclick="add('.')" class="botones">
+      <input type="button" value="0" onclick="add('0')" class="botones">
+      <input type="button" value="/" onclick="add('/')" class="botones">
+      <input type="button" value="x" onclick="add('*')" class="botones">
+      <br>
+      <input type="button" value="RESET" onclick="reset()" class="botonres">
+      <input type="button" value="=" onclick="calculate()" class="botoncalc">
+    </section>
+  </main>
+  <footer class="attribution">
+    Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
+    Coded by <a href="#">Mariano Azubel</a>.
+  </footer>
+  <script src="calc.js"></script>
+</body>
+</html>
